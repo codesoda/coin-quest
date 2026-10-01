@@ -1,0 +1,34 @@
+{
+  "bars": 8,
+  "beatsPerBar": 4,
+  "channels": 1,
+  "duration": 16.0,
+  "loopEnd": 16.0,
+  "loopStart": 0,
+  "metrics": {
+    "dc": -2.9150861190830497e-08,
+    "headRms": 0.21770434342785194,
+    "maxStep": 0.178924560546875,
+    "minWindowRms": 0.0003008582465444792,
+    "peak": 0.66290283203125,
+    "rms": 0.1449956017854316,
+    "seamSlopeChange": 6.103515625e-05,
+    "seamStep": 0.0072021484375,
+    "tailRms": 0.0799442578179467
+  },
+  "provenance": {
+    "description": "Original score and offline synthesis made for Coin Quest; no samples, borrowed melody, network service or external recordings.",
+    "generator": "scripts/compose_music.py",
+    "generatorSha256": "f2ae14bb673800295e54ace363b67ad6a645c2b99833596f1cedb9518cb60ee2",
+    "license": "CC0-1.0",
+    "score": "web/assets/funky-fanfare.score.json",
+    "scoreSha256": "b828e018c15fb36149a3311ff488c8836ee5c10540e9da52dcfb075dd985004c"
+  },
+  "sampleRate": 22050,
+  "samples": 352800,
+  "sha256": "16852361964fe96fe2f2ff6f37013c7c80c49d1fab12ea2b405ba59c6aa2ccec",
+  "tempo": 120,
+  "theme": "grassland",
+  "timbreProfile": "parade",
+  "title": "Pocket Parade"
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "description": "Nine original synthesized game effects. Preserved PCM WAV bytes.",
+  "sounds": {
+    "jump": {
+      "path": "assets/sounds/jump.wav",
+      "sha256": "a3accd14a52f975fb107327334cb85e47d20972f9bd149d847ec0ce8d217c86f",
+      "samples": 3857,
+      "sampleRate": 22050
+    },
+    "coin": {
+      "path": "assets/sounds/coin.wav",
+      "sha256": "8f32f13963e2bb9ca0d4b994c5a0b3f02f97d8cdc83138311949c12cb7a45fc0",
+      "samples": 3969,
+      "sampleRate": 22050
+    },
+    "stomp": {
+      "path": "assets/sounds/stomp.wav",
+      "sha256": "7396f829b24514c4a3b944c8b7e461d65bef3d3ed25bb687e7e5b20764a15cf4",
+      "samples": 3748,
+      "sampleRate": 22050
+    },
+    "damage": {
+      "path": "assets/sounds/damage.wav",
+      "sha256": "efb9ad488301f9bc0407528ea8bd599b2a69782ee1fdfe05a4ba8cdb032195d5",
+      "samples": 6394,
+      "sampleRate": 22050
+    },
+    "powerup": {
+      "path": "assets/sounds/powerup.wav",
+      "sha256": "adb72892b02aa23babe0f59d4bc6d3237395709c1e5ff172c045e19fd897ca99",
+      "samples": 3969,
+      "sampleRate": 22050
+    },
+    "grow": {
+      "path": "assets/sounds/grow.wav",
+      "sha256": "7e36b211683ac9380ece17863e7630e35b6db877f22b53e301aee6576ec12317",
+      "samples": 7055,
+      "sampleRate": 22050
+    },
+    "checkpoint": {
+      "path": "assets/sounds/checkpoint.wav",
+      "sha256": "b7dcda4e918de35b352fed85e6592677761b1dc30ae4d20f429890e5a4b0e458",
+      "samples": 7275,
+      "sampleRate": 22050
+    },
+    "gameover": {
+      "path": "assets/sounds/gameover.wav",
+      "sha256": "300b4eb38c073a5d7022f63226555f75be4c984f5caab92a3c1632ae44eb606a",
+      "samples": 14994,
+      "sampleRate": 22050
+    },
+    "victory": {
+      "path": "assets/sounds/victory.wav",
+      "sha256": "441989a5d592e4aa8691ba86e8c70580a9e97c7be5bee873840e1f2c7769ca99",
+      "samples": 23372,
+      "sampleRate": 22050
+    }
+  }
+}

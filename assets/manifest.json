@@ -1,0 +1,204 @@
+{
+  "images": {
+    "player_idle": "assets/sprites/player_idle.png",
+    "player_run1": "assets/sprites/player_run1.png",
+    "player_run2": "assets/sprites/player_run2.png",
+    "player_jump": "assets/sprites/player_jump.png",
+    "player_hurt": "assets/sprites/player_hurt.png",
+    "enemy_walker1": "assets/sprites/enemy_walker1.png",
+    "enemy_walker2": "assets/sprites/enemy_walker2.png",
+    "enemy_shell1": "assets/sprites/enemy_shell1.png",
+    "enemy_shell2": "assets/sprites/enemy_shell2.png",
+    "coin1": "assets/sprites/coin1.png",
+    "coin2": "assets/sprites/coin2.png",
+    "powerup": "assets/sprites/powerup.png",
+    "flag": "assets/sprites/flag.png",
+    "checkpoint": "assets/sprites/checkpoint.png",
+    "ground_grass": "assets/sprites/ground_grass.png",
+    "ground_dirt": "assets/sprites/ground_dirt.png",
+    "ground_stone": "assets/sprites/ground_stone.png",
+    "platform": "assets/sprites/platform.png",
+    "bonus_block": "assets/sprites/bonus_block.png",
+    "used_block": "assets/sprites/used_block.png",
+    "pipe": "assets/sprites/pipe.png",
+    "spike": "assets/sprites/spike.png",
+    "backdrop_grassland": "assets/backdrops/backdrop_grassland.png",
+    "backdrop_underground": "assets/backdrops/backdrop_underground.png",
+    "backdrop_castle": "assets/backdrops/backdrop_castle.png"
+  },
+  "metadata": {
+    "player_idle": {
+      "anchor": [
+        124.5,
+        270
+      ]
+    },
+    "player_run1": {
+      "anchor": [
+        124.5,
+        270
+      ]
+    },
+    "player_run2": {
+      "anchor": [
+        124.5,
+        270
+      ]
+    },
+    "player_jump": {
+      "anchor": [
+        124.5,
+        270
+      ]
+    },
+    "player_hurt": {
+      "anchor": [
+        124.5,
+        270
+      ]
+    },
+    "enemy_walker1": {
+      "anchor": [
+        114.5,
+        173
+      ]
+    },
+    "enemy_walker2": {
+      "anchor": [
+        118.5,
+        173
+      ]
+    },
+    "enemy_shell1": {
+      "anchor": [
+        122.0,
+        174
+      ]
+    },
+    "enemy_shell2": {
+      "anchor": [
+        119.0,
+        167
+      ]
+    },
+    "coin1": {
+      "anchor": [
+        86.5,
+        179
+      ]
+    },
+    "coin2": {
+      "anchor": [
+        21.5,
+        183
+      ]
+    },
+    "powerup": {
+      "anchor": [
+        79.5,
+        206
+      ]
+    },
+    "flag": {
+      "anchor": [
+        67.0,
+        298
+      ]
+    },
+    "checkpoint": {
+      "anchor": [
+        63.5,
+        218
+      ]
+    },
+    "ground_grass": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "ground_dirt": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "ground_stone": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "platform": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "bonus_block": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "used_block": {
+      "anchor": [
+        16.0,
+        32
+      ]
+    },
+    "pipe": {
+      "anchor": [
+        94.0,
+        229
+      ]
+    },
+    "spike": {
+      "anchor": [
+        16.0,
+        24
+      ]
+    },
+    "backdrop_grassland": {
+      "anchor": [
+        240.0,
+        180.0
+      ]
+    },
+    "backdrop_underground": {
+      "anchor": [
+        240.0,
+        180.0
+      ]
+    },
+    "backdrop_castle": {
+      "anchor": [
+        240.0,
+        180.0
+      ]
+    }
+  },
+  "sources": {
+    "assets/source/characters.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e031cd5e43e40fb10cd3f75aae8c50d766ace3f9f5e27c8775794249c28bbb57"
+    },
+    "assets/source/terrain.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "783420d7bb5664dbe4c4167ccc895c4b8b49ae4819f2460e717f3d371d3e352c"
+    },
+    "assets/source/backgrounds.png": {
+      "size": [
+        836,
+        1881
+      ],
+      "sha256": "7ec0a669f8b92408fe6441efcc16e368bedc8706192621e894ec77e4d087a4f1"
+    }
+  }
+}

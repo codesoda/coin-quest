@@ -1,0 +1,16 @@
+{
+  "name": "coin-quest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An offline browser platform game in three original pixel-art lands",
+  "scripts": {
+    "build": "python3 scripts/build_web.py",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/quality-gate.cjs tests/web-core.cjs && node --test tests/web-browser.cjs",
+    "scan": "node scripts/scan.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "aislop": "0.16.1"
+  },
+  "license": "MIT"
+}

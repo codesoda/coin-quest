@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>Coin Quest</title>
+  <style>{{STYLE}}</style>
+</head>
+<body>
+  <main id="game" tabindex="0" aria-label="Coin Quest game. Arrow keys or A and D move. Space jumps.">
+    <header class="masthead">
+      <div><strong>Coin Quest</strong><span class="edition">THREE LANDS · OFFLINE</span></div>
+      <nav aria-label="Game controls">
+        <button id="help-button" type="button" title="Instructions (I)">Help <kbd>I</kbd></button>
+        <button id="pause-button" type="button" title="Pause or resume (P / Escape)" disabled>Pause <kbd>P</kbd></button>
+        <button id="mute-button" type="button" title="Mute sound (M)" aria-pressed="false">Sound on <kbd>M</kbd></button>
+      </nav>
+    </header>
+    <div id="hud" aria-label="Game statistics">
+      <span>LIVES <b id="hud-lives">3</b></span>
+      <span>COINS <b id="hud-coins">0</b></span>
+      <span>SCORE <b id="hud-score">0</b></span>
+      <span>LEVEL <b id="hud-level">1 / 3</b></span>
+    </div>
+    <div id="stage">
+      <canvas id="canvas" width="480" height="360" aria-label="Coin Quest platform game">This game needs a browser with Canvas2D support.</canvas>
+      <section id="screen" aria-labelledby="screen-title">
+        <div class="screen-card">
+          <p id="screen-kicker">A SMALL HERO. A LONG ADVENTURE.</p>
+          <h1 id="screen-title">Coin Quest</h1>
+          <p id="screen-subtitle">Loading the original artwork and sounds…</p>
+          <div id="screen-copy"></div>
+          <div class="screen-actions">
+            <button id="primary-button" type="button" hidden>Start adventure</button>
+            <button id="secondary-button" type="button" hidden>How to play</button>
+          </div>
+          <p id="screen-hint" role="status" aria-live="polite">Everything is included. No download needed.</p>
+        </div>
+      </section>
+    </div>
+    <div id="touch-controls" aria-label="Touch game controls">
+      <button type="button" data-control="TouchLeft" aria-label="Move left">◀</button>
+      <button type="button" data-control="TouchRight" aria-label="Move right">▶</button>
+      <button type="button" data-control="TouchJump">Jump</button>
+    </div>
+    <footer>
+      <span><kbd>←</kbd> <kbd>→</kbd> / <kbd>A</kbd> <kbd>D</kbd> move · <kbd>Space</kbd> / <kbd>↑</kbd> jump</span>
+      <span><kbd>R</kbd> restart · <kbd>P</kbd> pause · <kbd>I</kbd> help</span>
+    </footer>
+    <p id="audio-notice" role="status" hidden></p>
+    <noscript>Enable JavaScript to play this fully offline game.</noscript>
+  </main>
+  <script>{{GAME_DATA}}</script>
+  <script>{{CORE_JS}}</script>
+  <script>{{UI_JS}}</script>
+  <script>{{AUDIO_JS}}</script>
+  <script>{{MAIN_JS}}</script>
+</body>
+</html>

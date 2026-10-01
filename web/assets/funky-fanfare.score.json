@@ -1,0 +1,1822 @@
+{
+  "title": "Pocket Parade",
+  "version": 1,
+  "tempo": 120,
+  "bars": 8,
+  "beatsPerBar": 4,
+  "swing": 0.56,
+  "sampleRate": 22050,
+  "seed": 41027,
+  "license": "CC0-1.0",
+  "provenance": "Original score and offline synthesis made for Coin Quest; no samples, borrowed melody, network service or external recordings.",
+  "progression": [
+    "C6/9",
+    "A7",
+    "Dm9",
+    "G13",
+    "Em7",
+    "A7",
+    "Dm9",
+    "G13"
+  ],
+  "events": [
+    {
+      "voice": "brass",
+      "beat": 0,
+      "duration": 0.65,
+      "notes": [
+        76
+      ],
+      "velocity": 0.88
+    },
+    {
+      "voice": "bass",
+      "beat": 0,
+      "duration": 0.65,
+      "notes": [
+        36
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 0,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 0.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "hat",
+      "beat": 0.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 0.75,
+      "duration": 0.3,
+      "notes": [
+        79
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 0.75,
+      "duration": 0.27,
+      "notes": [
+        48
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 1,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        67,
+        69,
+        74
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 1,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 1.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 1.5,
+      "duration": 0.4,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 1.5,
+      "duration": 0.35,
+      "notes": [
+        43
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 1.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 1.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 2.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 2.25,
+      "duration": 0.45,
+      "notes": [
+        36
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "brass",
+      "beat": 2.5,
+      "duration": 0.4,
+      "notes": [
+        86
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 2.5,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        67,
+        69,
+        74
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 2.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 2.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 3,
+      "duration": 0.25,
+      "notes": [
+        48
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 3,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 3.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 3.25,
+      "duration": 0.55,
+      "notes": [
+        84
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 3.25,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        67,
+        69,
+        74
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "bass",
+      "beat": 3.5,
+      "duration": 0.4,
+      "notes": [
+        32
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 3.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 4,
+      "duration": 0.65,
+      "notes": [
+        33
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 4,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 4.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 4.5,
+      "duration": 0.4,
+      "notes": [
+        85
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "hat",
+      "beat": 4.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 4.75,
+      "duration": 0.27,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 5,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 5,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 5.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 5.25,
+      "duration": 0.5,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 5.5,
+      "duration": 0.35,
+      "notes": [
+        40
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 5.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 5.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 6.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 6.25,
+      "duration": 0.45,
+      "notes": [
+        33
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "brass",
+      "beat": 6.5,
+      "duration": 0.4,
+      "notes": [
+        79
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 6.5,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 6.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 6.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 7,
+      "duration": 0.25,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 7,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 7.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 7.25,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 7.5,
+      "duration": 0.4,
+      "notes": [
+        76
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 7.5,
+      "duration": 0.4,
+      "notes": [
+        37
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 7.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 8,
+      "duration": 0.6,
+      "notes": [
+        77
+      ],
+      "velocity": 0.88
+    },
+    {
+      "voice": "bass",
+      "beat": 8,
+      "duration": 0.65,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 8,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 8.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "hat",
+      "beat": 8.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 8.75,
+      "duration": 0.3,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 8.75,
+      "duration": 0.27,
+      "notes": [
+        50
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 9,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 9,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 9.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 9.5,
+      "duration": 0.6,
+      "notes": [
+        84
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 9.5,
+      "duration": 0.35,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 9.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 9.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 10.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 10.25,
+      "duration": 0.45,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 10.5,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 10.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 10.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 10.75,
+      "duration": 0.35,
+      "notes": [
+        88
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 11,
+      "duration": 0.25,
+      "notes": [
+        50
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 11,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 11.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 11.25,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 11.5,
+      "duration": 0.4,
+      "notes": [
+        86
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 11.5,
+      "duration": 0.4,
+      "notes": [
+        30
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 11.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 12,
+      "duration": 0.65,
+      "notes": [
+        31
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 12,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 12.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 12.5,
+      "duration": 0.6,
+      "notes": [
+        83
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "hat",
+      "beat": 12.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 12.75,
+      "duration": 0.27,
+      "notes": [
+        43
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 13,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 13,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 13.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 13.5,
+      "duration": 0.35,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 13.5,
+      "duration": 0.35,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 13.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 13.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 14.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 14.25,
+      "duration": 0.7,
+      "notes": [
+        79
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 14.25,
+      "duration": 0.45,
+      "notes": [
+        31
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 14.5,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 14.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 14.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 15,
+      "duration": 0.25,
+      "notes": [
+        43
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 15,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 15.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 15.25,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 15.5,
+      "duration": 0.4,
+      "notes": [
+        74
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 15.5,
+      "duration": 0.4,
+      "notes": [
+        39
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 15.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "snare",
+      "beat": 15.75,
+      "duration": 0.12,
+      "notes": [],
+      "velocity": 0.24
+    },
+    {
+      "voice": "brass",
+      "beat": 16,
+      "duration": 0.6,
+      "notes": [
+        79
+      ],
+      "velocity": 0.88
+    },
+    {
+      "voice": "bass",
+      "beat": 16,
+      "duration": 0.65,
+      "notes": [
+        40
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 16,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 16.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "hat",
+      "beat": 16.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 16.75,
+      "duration": 0.3,
+      "notes": [
+        83
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 16.75,
+      "duration": 0.27,
+      "notes": [
+        52
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 17,
+      "duration": 0.2,
+      "notes": [
+        59,
+        62,
+        64,
+        67
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 17,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 17.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 17.5,
+      "duration": 0.45,
+      "notes": [
+        86
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 17.5,
+      "duration": 0.35,
+      "notes": [
+        47
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 17.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 17.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 18.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 18.25,
+      "duration": 0.45,
+      "notes": [
+        40
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "brass",
+      "beat": 18.5,
+      "duration": 0.6,
+      "notes": [
+        88
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 18.5,
+      "duration": 0.2,
+      "notes": [
+        59,
+        62,
+        64,
+        67
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 18.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 18.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 19,
+      "duration": 0.25,
+      "notes": [
+        52
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 19,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 19.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 19.25,
+      "duration": 0.2,
+      "notes": [
+        59,
+        62,
+        64,
+        67
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 19.5,
+      "duration": 0.3,
+      "notes": [
+        86
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 19.5,
+      "duration": 0.4,
+      "notes": [
+        32
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 19.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 20,
+      "duration": 0.65,
+      "notes": [
+        33
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 20,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 20.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 20.5,
+      "duration": 0.6,
+      "notes": [
+        85
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "hat",
+      "beat": 20.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 20.75,
+      "duration": 0.27,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 21,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 21,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 21.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 21.5,
+      "duration": 0.4,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 21.5,
+      "duration": 0.35,
+      "notes": [
+        40
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 21.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 21.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 22.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 22.25,
+      "duration": 0.45,
+      "notes": [
+        33
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "brass",
+      "beat": 22.5,
+      "duration": 0.35,
+      "notes": [
+        79
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 22.5,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 22.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 22.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 23,
+      "duration": 0.25,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 23,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 23.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 23.25,
+      "duration": 0.55,
+      "notes": [
+        76
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 23.25,
+      "duration": 0.2,
+      "notes": [
+        61,
+        64,
+        67,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "bass",
+      "beat": 23.5,
+      "duration": 0.4,
+      "notes": [
+        37
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 23.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 24,
+      "duration": 0.6,
+      "notes": [
+        77
+      ],
+      "velocity": 0.88
+    },
+    {
+      "voice": "bass",
+      "beat": 24,
+      "duration": 0.65,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 24,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 24.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "hat",
+      "beat": 24.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 24.75,
+      "duration": 0.3,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 24.75,
+      "duration": 0.27,
+      "notes": [
+        50
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 25,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 25,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 25.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 25.5,
+      "duration": 0.65,
+      "notes": [
+        84
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 25.5,
+      "duration": 0.35,
+      "notes": [
+        45
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 25.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 25.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 26.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 26.25,
+      "duration": 0.45,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 26.5,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 26.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 26.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 26.75,
+      "duration": 0.4,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 27,
+      "duration": 0.25,
+      "notes": [
+        50
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 27,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 27.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 27.25,
+      "duration": 0.2,
+      "notes": [
+        60,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 27.5,
+      "duration": 0.4,
+      "notes": [
+        77
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 27.5,
+      "duration": 0.4,
+      "notes": [
+        30
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 27.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 28,
+      "duration": 0.4,
+      "notes": [
+        79
+      ],
+      "velocity": 0.88
+    },
+    {
+      "voice": "bass",
+      "beat": 28,
+      "duration": 0.65,
+      "notes": [
+        31
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "kick",
+      "beat": 28,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.85
+    },
+    {
+      "voice": "hat",
+      "beat": 28.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "hat",
+      "beat": 28.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "brass",
+      "beat": 28.75,
+      "duration": 0.35,
+      "notes": [
+        81
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 28.75,
+      "duration": 0.27,
+      "notes": [
+        43
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "stab",
+      "beat": 29,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.44
+    },
+    {
+      "voice": "snare",
+      "beat": 29,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 29.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "brass",
+      "beat": 29.5,
+      "duration": 0.5,
+      "notes": [
+        83
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 29.5,
+      "duration": 0.35,
+      "notes": [
+        38
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 29.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "kick",
+      "beat": 29.75,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.48
+    },
+    {
+      "voice": "hat",
+      "beat": 30.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "bass",
+      "beat": 30.25,
+      "duration": 0.45,
+      "notes": [
+        31
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "brass",
+      "beat": 30.5,
+      "duration": 0.4,
+      "notes": [
+        74
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "stab",
+      "beat": 30.5,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "kick",
+      "beat": 30.5,
+      "duration": 0.32,
+      "notes": [],
+      "velocity": 0.7
+    },
+    {
+      "voice": "hat",
+      "beat": 30.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "bass",
+      "beat": 31,
+      "duration": 0.25,
+      "notes": [
+        43
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "snare",
+      "beat": 31,
+      "duration": 0.24,
+      "notes": [],
+      "velocity": 0.6
+    },
+    {
+      "voice": "hat",
+      "beat": 31.0,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.42
+    },
+    {
+      "voice": "stab",
+      "beat": 31.25,
+      "duration": 0.2,
+      "notes": [
+        59,
+        64,
+        65,
+        69
+      ],
+      "velocity": 0.36
+    },
+    {
+      "voice": "brass",
+      "beat": 31.5,
+      "duration": 0.55,
+      "notes": [
+        67
+      ],
+      "velocity": 0.72
+    },
+    {
+      "voice": "bass",
+      "beat": 31.5,
+      "duration": 0.4,
+      "notes": [
+        35
+      ],
+      "velocity": 0.8
+    },
+    {
+      "voice": "hat",
+      "beat": 31.5,
+      "duration": 0.1,
+      "notes": [],
+      "velocity": 0.26
+    },
+    {
+      "voice": "snare",
+      "beat": 31.75,
+      "duration": 0.12,
+      "notes": [],
+      "velocity": 0.24
+    }
+  ]
+}

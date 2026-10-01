@@ -1,0 +1,34 @@
+{
+  "bars": 8,
+  "beatsPerBar": 4,
+  "channels": 1,
+  "duration": 18.285714285714285,
+  "loopEnd": 18.285714285714285,
+  "loopStart": 0,
+  "metrics": {
+    "dc": -1.2791345989893353e-08,
+    "headRms": 0.2787894100154698,
+    "maxStep": 0.099822998046875,
+    "minWindowRms": 0.014838060798442331,
+    "peak": 0.67999267578125,
+    "rms": 0.12532717991458878,
+    "seamSlopeChange": 0.0003662109375,
+    "seamStep": 0.00286865234375,
+    "tailRms": 0.0759588378088278
+  },
+  "provenance": {
+    "description": "Original composition and deterministic offline synthesis made for Coin Quest. No borrowed tune, samples, recordings, or external service. Score and recording dedicated to CC0.",
+    "generator": "scripts/compose_music.py",
+    "generatorSha256": "f2ae14bb673800295e54ace363b67ad6a645c2b99833596f1cedb9518cb60ee2",
+    "license": "CC0-1.0",
+    "score": "web/assets/lantern-grotto.score.json",
+    "scoreSha256": "dae2ae3752daa268c2c20aa25126c48769ad70655842f027d13935cc7ddaf59d"
+  },
+  "sampleRate": 22050,
+  "samples": 403200,
+  "sha256": "51a432517ad16ed047bbf94d8504d5d39da3b0f153697d6e75d4257098e1f62c",
+  "tempo": 105,
+  "theme": "underground",
+  "timbreProfile": "cavern",
+  "title": "Lantern Grotto"
+}

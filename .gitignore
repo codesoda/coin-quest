@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.pi/
+.aislop/*
+!.aislop/config.yml
+graft/
+build/
+dist/
+/index.html
+/web/game-data.json
+tests/artifacts/
+__pycache__/
+*.py[cod]
+.venv/
+*.log

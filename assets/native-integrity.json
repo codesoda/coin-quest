@@ -1,0 +1,157 @@
+{
+  "levelsSha256": "279456c70f61ba309ffa5507a1c6d0fdb63daca077f32bf2ccb6d1ed36f5c16f",
+  "images": {
+    "player_idle": {
+      "path": "assets/sprites/player_idle.png",
+      "sha256": "160e8c3d659d718855cdd35970ad085a961ce0238f0cc289aa45ebfd2404f7f2"
+    },
+    "player_run1": {
+      "path": "assets/sprites/player_run1.png",
+      "sha256": "3cd3781a2a331f851a0b899f9e416b2d2cf950346441fdc41f6439354a853b7f"
+    },
+    "player_run2": {
+      "path": "assets/sprites/player_run2.png",
+      "sha256": "dd4f55ec55c98006fd8a2181be714a3e155b273ea04a6fb4bc04283c71af784a"
+    },
+    "player_jump": {
+      "path": "assets/sprites/player_jump.png",
+      "sha256": "e4c4d6a0e11b598051cd990b6e79414b798835697cd60ae16631ecf1d9935ed7"
+    },
+    "player_hurt": {
+      "path": "assets/sprites/player_hurt.png",
+      "sha256": "138c1fed8b393c2536ab7fed945104361708a11d3743042387120cab2816f0fb"
+    },
+    "enemy_walker1": {
+      "path": "assets/sprites/enemy_walker1.png",
+      "sha256": "073a20b31129c7e83e417afce929117da68becdc85103e3d6dc3f9daee37832d"
+    },
+    "enemy_walker2": {
+      "path": "assets/sprites/enemy_walker2.png",
+      "sha256": "49d40020e0c27039591fd7bd1c6eb5b54f12385efc84d8a6e185cb78061f59ab"
+    },
+    "enemy_shell1": {
+      "path": "assets/sprites/enemy_shell1.png",
+      "sha256": "1923442255025760feb168ade4429edd5037d68cc977f1e61aac89e2eed299f8"
+    },
+    "enemy_shell2": {
+      "path": "assets/sprites/enemy_shell2.png",
+      "sha256": "2191bf7cd83e0254a58cee3390efad6e0abb2c40116e91a00e07fcab60b59ecf"
+    },
+    "coin1": {
+      "path": "assets/sprites/coin1.png",
+      "sha256": "34864c3ab5b650511f5f6b689f605f5e4fbe1d91d715556891ecbc38b8388147"
+    },
+    "coin2": {
+      "path": "assets/sprites/coin2.png",
+      "sha256": "d9994636b68b6395ddf714b9daa3f81783b0e9501c69b5ecf2fa4f3bdf0e023e"
+    },
+    "powerup": {
+      "path": "assets/sprites/powerup.png",
+      "sha256": "8144af4520997ddacc471eaa04743f5185586408ab5ba457f765948782735ff3"
+    },
+    "flag": {
+      "path": "assets/sprites/flag.png",
+      "sha256": "4426160da0d1da706d29218dacf3d4a3b4fb4638157e905e1484d65dff097fa2"
+    },
+    "checkpoint": {
+      "path": "assets/sprites/checkpoint.png",
+      "sha256": "4f3b2ccf80f6fedca3c25a3bf8fa466590ee0616479f01b72e02fce62dd39bb9"
+    },
+    "ground_grass": {
+      "path": "assets/sprites/ground_grass.png",
+      "sha256": "95c2a854e7135e0882a0534f94192dedecb39770703182c51cec407465e8d613"
+    },
+    "ground_dirt": {
+      "path": "assets/sprites/ground_dirt.png",
+      "sha256": "fffbc0e176e5fd0c543efd85d6423980bde6ee2ea60e783c35c6e06251777c5c"
+    },
+    "ground_stone": {
+      "path": "assets/sprites/ground_stone.png",
+      "sha256": "d02b647eecfcdfbca2beb32d5ef5b0c56f8285ac59fbfb6f24348ea72945f871"
+    },
+    "platform": {
+      "path": "assets/sprites/platform.png",
+      "sha256": "bbee626e00ca686da53655099d19e5a9efdc7a82b2e199acfa23ba9f586a18e7"
+    },
+    "bonus_block": {
+      "path": "assets/sprites/bonus_block.png",
+      "sha256": "7b7dfccc1d50059122fa68e8f561407dd36cbe785545d570851009a6db3f59b0"
+    },
+    "used_block": {
+      "path": "assets/sprites/used_block.png",
+      "sha256": "1bf3eea18a8049e2a54dc2ba9a064beee58473cf36949ab7e691472b20add5db"
+    },
+    "pipe": {
+      "path": "assets/sprites/pipe.png",
+      "sha256": "638daa600b61b4bf82c517b106820830f31a5f60d7380706ae88e5ea70980c5f"
+    },
+    "spike": {
+      "path": "assets/sprites/spike.png",
+      "sha256": "4f59a40faadaed11f39330cefb7fe7b8f094f2ac6cac402f79ae05144a801a42"
+    },
+    "backdrop_grassland": {
+      "path": "assets/backdrops/backdrop_grassland.png",
+      "sha256": "6f4fb65aeff2c79f8b29ea7a483ed4b23d5eb356a96d917a2d2e9b2f97a01d4a"
+    },
+    "backdrop_underground": {
+      "path": "assets/backdrops/backdrop_underground.png",
+      "sha256": "e3330d3f6e13cfa5fe1e42c7da0e0db78f76e0f00396099bb4d59a83aa14e149"
+    },
+    "backdrop_castle": {
+      "path": "assets/backdrops/backdrop_castle.png",
+      "sha256": "456cd08024f9eff582861c75339c2258529976a803819560cb67705018c3a8d3"
+    }
+  },
+  "sounds": {
+    "jump": {
+      "path": "assets/sounds/jump.wav",
+      "sha256": "a3accd14a52f975fb107327334cb85e47d20972f9bd149d847ec0ce8d217c86f"
+    },
+    "coin": {
+      "path": "assets/sounds/coin.wav",
+      "sha256": "8f32f13963e2bb9ca0d4b994c5a0b3f02f97d8cdc83138311949c12cb7a45fc0"
+    },
+    "stomp": {
+      "path": "assets/sounds/stomp.wav",
+      "sha256": "7396f829b24514c4a3b944c8b7e461d65bef3d3ed25bb687e7e5b20764a15cf4"
+    },
+    "damage": {
+      "path": "assets/sounds/damage.wav",
+      "sha256": "efb9ad488301f9bc0407528ea8bd599b2a69782ee1fdfe05a4ba8cdb032195d5"
+    },
+    "powerup": {
+      "path": "assets/sounds/powerup.wav",
+      "sha256": "adb72892b02aa23babe0f59d4bc6d3237395709c1e5ff172c045e19fd897ca99"
+    },
+    "grow": {
+      "path": "assets/sounds/grow.wav",
+      "sha256": "7e36b211683ac9380ece17863e7630e35b6db877f22b53e301aee6576ec12317"
+    },
+    "checkpoint": {
+      "path": "assets/sounds/checkpoint.wav",
+      "sha256": "b7dcda4e918de35b352fed85e6592677761b1dc30ae4d20f429890e5a4b0e458"
+    },
+    "gameover": {
+      "path": "assets/sounds/gameover.wav",
+      "sha256": "300b4eb38c073a5d7022f63226555f75be4c984f5caab92a3c1632ae44eb606a"
+    },
+    "victory": {
+      "path": "assets/sounds/victory.wav",
+      "sha256": "441989a5d592e4aa8691ba86e8c70580a9e97c7be5bee873840e1f2c7769ca99"
+    }
+  },
+  "music": {
+    "grassland": {
+      "path": "web/assets/funky-fanfare.wav",
+      "sha256": "16852361964fe96fe2f2ff6f37013c7c80c49d1fab12ea2b405ba59c6aa2ccec"
+    },
+    "underground": {
+      "path": "web/assets/lantern-grotto.wav",
+      "sha256": "51a432517ad16ed047bbf94d8504d5d39da3b0f153697d6e75d4257098e1f62c"
+    },
+    "castle": {
+      "path": "web/assets/velvet-battlements.wav",
+      "sha256": "8b0d8fd8c9e47b634075e6c6ba0d54a1c4f228772612ae9aa1315f84ef447fc9"
+    }
+  }
+}

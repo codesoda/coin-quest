@@ -1,0 +1,72 @@
+name: Coin Quest checks and Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: checks-${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Install locked dependencies
+        id: install
+        run: npm ci
+      - name: Install Chromium
+        run: npx --no-install playwright install chromium --with-deps
+      - name: Build the standalone artifact
+        run: npm run build
+      - name: Test the built artifact
+        run: npm test
+      - name: Require AISLOP 95 and a clean audit
+        id: scan
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npm run scan
+      - name: Save quality evidence, including failed scans
+        if: ${{ !cancelled() && steps.scan.outcome != 'skipped' }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: quality-report
+          path: tests/artifacts/quality/*.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Stage the checked site for Pages
+        if: ${{ success() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: dist
+
+  deploy:
+    needs: checks
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Deploy the checked artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -1,0 +1,15 @@
+ci:
+  failBelow: 95
+exclude:
+  - index.html
+  - dist/**
+  - build/**
+  - web/game-data.json
+  - node_modules/**
+  - .pi/**
+  - .aislop/**
+  - graft/**
+  - tests/artifacts/**
+  - '**/__pycache__/**'
+  - '**/*.png'
+  - '**/*.wav'

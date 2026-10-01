@@ -1,0 +1,34 @@
+{
+  "bars": 8,
+  "beatsPerBar": 4,
+  "channels": 1,
+  "duration": 16.0,
+  "loopEnd": 16.0,
+  "loopStart": 0,
+  "metrics": {
+    "dc": 8.650107178287982e-11,
+    "headRms": 0.2916194947214765,
+    "maxStep": 0.139434814453125,
+    "minWindowRms": 0.002280075896059092,
+    "peak": 0.67999267578125,
+    "rms": 0.14261903540143092,
+    "seamSlopeChange": 0.000732421875,
+    "seamStep": 0.003265380859375,
+    "tailRms": 0.13979234622943992
+  },
+  "provenance": {
+    "description": "Original composition and deterministic offline synthesis made for Coin Quest. No borrowed tune, samples, recordings, or external service. Score and recording dedicated to CC0.",
+    "generator": "scripts/compose_music.py",
+    "generatorSha256": "f2ae14bb673800295e54ace363b67ad6a645c2b99833596f1cedb9518cb60ee2",
+    "license": "CC0-1.0",
+    "score": "web/assets/velvet-battlements.score.json",
+    "scoreSha256": "41205b2c919a2819b37615a8d0ae5bf4b0900b8de59e507d09178d7ad18a41f3"
+  },
+  "sampleRate": 22050,
+  "samples": 352800,
+  "sha256": "8b0d8fd8c9e47b634075e6c6ba0d54a1c4f228772612ae9aa1315f84ef447fc9",
+  "tempo": 120,
+  "theme": "castle",
+  "timbreProfile": "regal",
+  "title": "Velvet Battlements"
+}

@@ -1,0 +1,101 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  background: #101d25;
+  color: #fff6df;
+  --game-width: 960px;
+  --gold: #f1cb64;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 20px 12px;
+  background: radial-gradient(ellipse at top, #244637, #101d25 75%);
+}
+#game { width: min(var(--game-width), 100%); outline: none; }
+#game:focus-visible { outline: 2px solid #9bd4b8; outline-offset: 6px; }
+.masthead { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.masthead strong { font-size: 24px; letter-spacing: 3px; color: var(--gold); }
+.edition { display: block; font-size: 9px; letter-spacing: 1.2px; margin-top: 4px; color: #9bd4b8; }
+nav { display: flex; gap: 6px; }
+button {
+  color: #fff6df;
+  background: #244539;
+  border: 1px solid #658b70;
+  border-radius: 5px;
+  padding: 9px 12px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:hover { background: #365f48; }
+button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+button:disabled { opacity: .45; cursor: default; }
+kbd { font: inherit; color: #c2d4c6; }
+nav kbd { color: var(--gold); margin-left: 5px; }
+#hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px;
+  background: #122b2d;
+  border: 1px solid #4b6858;
+  border-bottom: 0;
+  border-radius: 7px 7px 0 0;
+  color: #aac4b4;
+  font-size: 11px;
+}
+#hud b { color: var(--gold); font-size: 15px; margin-left: 6px; font-variant-numeric: tabular-nums; }
+#stage { position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #122b2d; box-shadow: 0 12px 32px #0005; }
+canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; }
+#screen { position: absolute; inset: 0; display: grid; place-items: center; padding: 16px; background: #10252dbb; }
+#screen[hidden], [hidden] { display: none !important; }
+.screen-card { width: 94%; max-width: 600px; max-height: 100%; overflow-y: auto; text-align: center; padding: 24px 20px 16px; border: 2px solid #6b8f6b; border-radius: 12px; background: #142e32f5; box-shadow: 0 10px 40px #0005; }
+#screen-kicker { color: #9bd4b8; font-size: clamp(8px, 1.5vw, 11px); letter-spacing: 1.2px; }
+h1 { color: var(--gold); margin: 12px 0; font-size: clamp(26px, 6vw, 48px); letter-spacing: 2px; }
+#screen-subtitle { color: #dce9d5; font-size: 13px; line-height: 1.5; }
+#screen-copy { font-size: 12px; line-height: 1.65; }
+#screen-copy p { margin: 5px 0; }
+.screen-actions { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+#primary-button { color: #152c2b; background: var(--gold); border-color: #ffe5a0; font-weight: bold; }
+#primary-button:hover { background: #ffe59a; }
+#screen-hint { min-height: 1em; color: #a5c4b3; font-size: 10px; line-height: 1.5; margin: 14px 0 0; }
+footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 12px 0 0; color: #99b5a5; font-size: 10px; line-height: 1.8; }
+#audio-notice { color: var(--gold); font-size: 11px; }
+#touch-controls { display: none; gap: 12px; padding-top: 12px; }
+#touch-controls button { min-width: 64px; min-height: 48px; user-select: none; -webkit-user-select: none; touch-action: none; font-size: 18px; }
+#touch-controls button:last-child { margin-left: auto; }
+@media (pointer: coarse) { #touch-controls { display: flex; } }
+@media (max-width: 540px), (max-height: 500px) {
+  body { padding: 10px 6px; }
+  .masthead strong { font-size: 19px; }
+  .edition { font-size: 7px; }
+  nav button { padding: 8px; font-size: 10px; }
+  nav kbd { display: none; }
+  #hud { padding: 9px 7px; font-size: 9px; }
+  #hud b { font-size: 12px; margin-left: 2px; }
+  #screen { padding: 8px; }
+  .screen-card { padding: 10px 8px; width: 98%; }
+  h1 { margin: 6px 0; }
+  #screen-subtitle, #screen-copy { font-size: 10px; line-height: 1.45; }
+  #screen-subtitle { margin: 8px 0; }
+  #screen-copy p { margin: 3px 0; }
+  #screen-kicker { margin: 3px 0; }
+  .screen-actions { margin-top: 8px; }
+  #screen-hint { margin-top: 6px; font-size: 9px; }
+  footer { font-size: 9px; }
+}
+@media (max-height: 500px) {
+  body { padding: 8px 6px; }
+  .masthead { gap: 6px; margin-bottom: 8px; }
+  .masthead strong { font-size: 16px; letter-spacing: 2px; }
+  .edition, footer { display: none; }
+  nav { gap: 4px; }
+  nav button { padding: 6px; font-size: 9px; white-space: nowrap; }
+  #touch-controls { padding-top: 8px; }
+  #touch-controls button { min-height: 44px; }
+}
