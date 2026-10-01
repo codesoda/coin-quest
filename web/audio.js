@@ -60,7 +60,7 @@
       clearTimeout(this.sleepTimer);
       if (this.resuming) return this.resuming;
       // Await resume without delaying input or physics. Only a gesture calls this.
-      this.resuming = Promise.resolve().then(() => c.state === 'running' ? undefined : c.resume()).then(() => {
+      this.resuming = Promise.resolve(this.suspending).then(() => c.state === 'running' ? undefined : c.resume()).then(() => {
         if (this.sleeping || document.hidden) { this.pending.length = 0; this.sleep(); return; }
         if (c.state !== 'running') return;
         $('audio-notice').hidden = true;
@@ -121,8 +121,10 @@
     suspendWhenQuiet() {
       // Stop deadlines use the audio clock, not wall time. Wait for native ended
       // events before suspending, even if the audio device takes longer than 30ms.
-      if (this.sleeping && this.context && !this.musicSource && !this.playing.size) {
-        this.context.suspend().catch(() => this.notice('Could not suspend audio. Sound remains muted.'));
+      if (this.sleeping && this.context && !this.musicSource && !this.playing.size && !this.suspending) {
+        this.suspending = this.context.suspend()
+          .catch(() => this.notice('Could not suspend audio. Sound remains muted.'))
+          .finally(() => { this.suspending = null; });
       }
     }
     sleep() {
@@ -137,7 +139,7 @@
     syncMusic() {
       const c = this.context;
       if (!this.active || this.muted || this.sleeping || document.hidden) { this.stopMusic(); return; }
-      if (!c || !this.gesture || c.state !== 'running' || !this.musicBuffers[this.theme] || this.musicSource) return;
+      if (!c || !this.gesture || this.suspending || c.state !== 'running' || !this.musicBuffers[this.theme] || this.musicSource) return;
       const track = this.music.tracks[this.theme];
       const source = c.createBufferSource();
       source.buffer = this.musicBuffers[this.theme]; source.loop = true;
@@ -167,7 +169,7 @@
     play(name) {
       const c = this.context;
       if (!c || !this.gesture || this.sleeping || document.hidden || this.muted || !this.buffers[name]) return;
-      if (c.state !== 'running') {
+      if (this.suspending || c.state !== 'running') {
         // Bounded, short-lived unlock queue; stale cues never burst after a long pause.
         if (this.pending.length < 8) this.pending.push({ name, at: performance.now() });
         return;

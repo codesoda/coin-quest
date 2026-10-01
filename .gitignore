@@ -5,6 +5,7 @@ node_modules/
 !.aislop/config.yml
 graft/
 build/
+/backups/
 dist/
 /index.html
 /web/game-data.json

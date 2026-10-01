@@ -136,7 +136,7 @@ def export_music(root):
         if (sha256(music_raw) != music['sha256']
                 or sha256(score_raw) != music['provenance']['scoreSha256']
                 or sha256(generator_raw) != music['provenance']['generatorSha256']):
-            raise ExportError(f'Stale music asset ({theme}): run scripts/compose_music.py or build:web')
+            raise ExportError(f'Stale music asset ({theme}): run npm run build')
         for key, value in dict(theme=theme, title=score['title'], timbreProfile=profile,
                                tempo=score['tempo'], bars=8, beatsPerBar=4, channels=1,
                                sampleRate=score['sampleRate']).items():

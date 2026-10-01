@@ -44,6 +44,8 @@ AISLOP is pinned to **0.16.1**. Its recognized `.aislop/config.yml` sets `ci.fai
 `npm run scan` runs `aislop ci`, rejects unscored or incomplete engine results, and requires a clean `npm audit`.
 Generated assets and local evidence are excluded; authored game code and tests are not excluded.
 Reports stay in ignored `tests/artifacts/quality/`.
+Node test filenames use `*.test.cjs` so the scanner includes them.
+Keep the original backup outside the repository. Do not commit backups or local review evidence.
 
 `assets/levels.json` owns the three layouts. `assets/manifest.json` owns PNG paths and anchors.
 `assets/sounds/manifest.json` records effect paths and hashes. `assets/native-integrity.json` preserves the approved asset checksums.
@@ -55,14 +57,13 @@ See [artwork notes](assets/ART_NOTES.md) for source and processing details.
 
 ## GitHub Pages
 
-The intended public repository is `codesoda/coin-quest`.
-The intended site is <https://codesoda.github.io/coin-quest/>.
+The public repository is <https://github.com/codesoda/coin-quest>.
+Play at <https://codesoda.github.io/coin-quest/>.
 The embedded page works under this subpath and directly from `file://`.
 
 The prepared workflow checks pull requests without deploying them. Successful `main` pushes and manual runs on `main`
 can deploy only after build, tests, AISLOP, and audit pass. Only `dist/` enters the Pages artifact.
-Select **GitHub Actions** as the Pages source when the repository is created.
-No repository creation, push, or deployment is part of this local setup.
+GitHub Pages uses **GitHub Actions** as its deployment source.
 
 ## Credits and license
 

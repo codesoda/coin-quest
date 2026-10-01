@@ -127,7 +127,7 @@ function observe() {
     o.current = null;
   });
 }
-async function open(options = {}, fixture = null) {
+async function open(options = {}, fixture = null, url = URL) {
   const context = await browser.newContext({ viewport: report.viewport, deviceScaleFactor: 1, ...options });
   await context.setOffline(true);
   await context.route(/^(https?|wss?):/i, route => {
@@ -140,7 +140,7 @@ async function open(options = {}, fixture = null) {
   page.on('console', msg => { if (msg.type() === 'error') report.errors.push(msg.text()); });
   page.on('requestfailed', req => report.failedRequests.push({ url: req.url(), error: req.failure() }));
   page.on('request', req => { if (!/^(file:|data:)/.test(req.url())) report.externalRequests.push(req.url()); });
-  await page.goto(URL);
+  await page.goto(url);
   await page.waitForFunction(() => window.CoinQuest?.ready);
   return page;
 }
@@ -217,6 +217,18 @@ test('compiled HTML matches source hashes, embeds exact data and has no runtime 
   await page.close(); report.checks.push('embedded source/data/25 PNG/9 SFX + 3 scene WAV preload');
 });
 
+test('dist standalone file runs offline with the same title and playable controls', async () => {
+  assert.deepEqual(fs.readFileSync(path.join(ROOT, 'dist/index.html')), fs.readFileSync(HTML));
+  const page = await open({}, null, pathToFileURL(path.join(ROOT, 'dist/index.html')).href);
+  assert.equal(await page.title(), 'Coin Quest');
+  await page.keyboard.press('Enter'); await audioRunning(page); await musicLive(page, 1);
+  await page.keyboard.down('ArrowRight');
+  await page.waitForFunction(() => CoinQuest.game.player.x > 210);
+  await page.keyboard.up('ArrowRight');
+  assert.equal((await state(page)).coins, 2);
+  await page.close();
+});
+
 test('Pages subpath serves the self-contained build without external resource requests', async t => {
   const server = http.createServer((request, response) => {
     if (request.url !== '/coin-quest/') { response.writeHead(404).end(); return; }
@@ -230,11 +242,20 @@ test('Pages subpath serves the self-contained build without external resource re
   const page = await context.newPage(), requests = [];
   page.on('request', request => requests.push(request.url()));
   const url = `http://127.0.0.1:${server.address().port}/coin-quest/`;
-  await page.goto(url); await page.waitForFunction(() => window.CoinQuest?.ready);
+  await context.route('**/*', route => {
+    if (route.request().isNavigationRequest() && route.request().url() === url) return route.continue();
+    return route.abort();
+  });
+  await page.goto(url); await context.setOffline(true);
+  await page.waitForFunction(() => window.CoinQuest?.ready);
   assert.equal(await page.title(), 'Coin Quest');
   assert.equal(await page.locator('#screen-title').textContent(), 'Coin Quest');
   await page.keyboard.press('Enter');
   assert.equal((await state(page)).state, 'play');
+  await page.keyboard.down('ArrowRight');
+  await page.waitForFunction(() => CoinQuest.game.player.x > 210);
+  await page.keyboard.up('ArrowRight');
+  assert.equal((await state(page)).coins, 2);
   assert.deepEqual(requests.filter(url => !url.startsWith('data:')), [url]);
 });
 
@@ -590,6 +611,31 @@ test('focus sleep waits for real scheduled source endings before suspending the 
   await page.close();
 });
 
+test('trusted wake waits for an in-flight native suspend before resuming audio', async () => {
+  const page = await open({}, () => {
+    const suspend = AudioContext.prototype.suspend;
+    window.__suspendRequested = 0; window.__suspendCompleted = 0;
+    AudioContext.prototype.suspend = function () {
+      __suspendRequested++;
+      return new Promise((resolve, reject) => setTimeout(() => {
+        suspend.call(this).then(() => { __suspendCompleted++; resolve(); }, reject);
+      }, 180));
+    };
+  });
+  await page.keyboard.press('Enter'); await audioRunning(page); await musicLive(page, 1);
+  await page.evaluate(() => window.dispatchEvent(new Event('blur')));
+  await page.waitForFunction(() => __suspendRequested > 0);
+  assert.equal(await page.evaluate(() => __suspendCompleted), 0, 'wake actually races a pending suspend');
+  await page.keyboard.press('Enter');
+  await page.waitForFunction(() => __suspendCompleted > 0);
+  await audioRunning(page); await musicLive(page, 1);
+  assert.equal((await state(page)).state, 'play');
+  assert.equal((await musicState(page)).max, 1);
+  assert.equal((await musicState(page)).sources.length, 2);
+  report.wakeDuringSuspend = await audioTrace(page);
+  await page.close();
+});
+
 test('audio delayed native resume queues a fresh jump without blocking gameplay', async () => {
   const page=await open({},()=>{
     const native=AudioContext.prototype.resume;
@@ -835,6 +881,7 @@ test('sustained real-clock moving scene measures rAF, update/presentation costs,
     drawImageCalls:distribution(samples.map(s=>s.draws)), movingFraction:samples.filter(s=>Math.abs(s.vx)>1).length/samples.length,
     fullTerrainTiles:samples[0].tiles, heapBeforeBytes:heapBefore, heapAfterBytes:heapAfter,
     notes:'20+ seconds of trusted-key back-and-forth movement with camera scroll, original terrain/entities and sound. Normal rAF/performance.now clocks; no virtual time. Update includes fixed-clock/input work. Presentation = full callback minus update, including Canvas submission, audio and HUD; not GPU/compositor time. Costs include observation overhead and timer quantization. Heap includes test samples; no GC forced, not a leak test. Headless Chromium is not proof of display FPS on every device.' };
+  near(report.performance.physicsHz, 60, 'sustained native physics frequency', 1.5);
   fs.writeFileSync(path.join(OUT,'performance-samples.json'),JSON.stringify(samples)+'\n');
   await page.keyboard.up('KeyD'); await page.close(); report.checks.push('20+ second realtime performance measurement');
 });

@@ -5,7 +5,7 @@
   "description": "An offline browser platform game in three original pixel-art lands",
   "scripts": {
     "build": "python3 scripts/build_web.py",
-    "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/quality-gate.cjs tests/web-core.cjs && node --test tests/web-browser.cjs",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/quality-gate.test.cjs tests/web-core.test.cjs && node --test tests/web-browser.test.cjs",
     "scan": "node scripts/scan.cjs"
   },
   "devDependencies": {
